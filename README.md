@@ -77,11 +77,8 @@ Coming Soon
 
 ## Installation
 
-Clone the repository
-
 ```
-git clone https://github.com/yourusername/medlink-healthcare.git
-```
+https://github.com/tebogo-4-dee/medlink-healthcare```
 
 Open
 
