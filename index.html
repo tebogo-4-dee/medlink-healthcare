@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedLink Healthcare | Caring Beyond Medicine</title>
+  <meta name="description" content="MedLink Healthcare offers professional, compassionate medical care. Book appointments, meet our doctors, and explore our services online.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <!-- photo needed: 32x32 or 64x64 px favicon icon, simple medical cross or pulse-line logomark on transparent background -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>MedLink</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="appointments.html" class="btn btn-primary nav-cta">Book Appointment</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="pulse-line" aria-hidden="true">
+      <svg viewBox="0 0 600 60" preserveAspectRatio="none">
+        <path d="M0,30 L120,30 L140,10 L160,50 L180,5 L200,55 L220,30 L600,30" />
+      </svg>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-text" data-aos="fade-up">
+        <span class="eyebrow">Trusted Healthcare Provider</span>
+        <h1>Your Health Is Our Priority</h1>
+        <p>Professional healthcare services with compassionate medical experts, available when you need us most.</p>
+        <div class="hero-buttons">
+          <a href="appointments.html" class="btn btn-primary">Book Appointment</a>
+          <a href="services.html" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+
+      <div class="hero-image" data-aos="fade-left">
+        <img src="assets/images/hero-doctor.jpg" alt="Doctor smiling with a patient at MedLink Healthcare">
+        <!-- photo needed: warm, well-lit photo of a doctor (or doctor + patient) in a modern clinic setting, friendly expression, landscape orientation, at least 1000px wide -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-card" data-aos="fade-up">
+        <h2 class="counter" data-target="20">0</h2>
+        <p>Doctors</p>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="counter" data-target="15">0</h2>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="counter" data-target="10000">0</h2>
+        <p>Patients</p>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="counter-text">24/7</h2>
+        <p>Emergency Care</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT PREVIEW ===== -->
+  <section class="about-preview">
+    <div class="container about-grid">
+      <div class="about-image" data-aos="fade-right">
+        <img src="assets/images/clinic-interior.jpg" alt="MedLink Healthcare clinic interior">
+        <!-- photo needed: bright, modern clinic interior or reception area, clean and welcoming, landscape orientation -->
+      </div>
+
+      <div class="about-text" data-aos="fade-left">
+        <span class="eyebrow">About MedLink</span>
+        <h2>Compassionate Care, Modern Medicine</h2>
+        <p>For over 15 years, MedLink Healthcare has combined advanced medical technology with genuine, patient-first care. Our team of specialists works together to make sure every visit feels personal, not just procedural.</p>
+        <a href="about.html" class="btn btn-outline">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <span class="eyebrow">What We Offer</span>
+        <h2>Our Medical Services</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up">
+          <i class="fa-solid fa-stethoscope"></i>
+          <h3>General Consultation</h3>
+          <p>Comprehensive checkups and personalized health advice from experienced physicians.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <h3>Cardiology</h3>
+          <p>Heart health screening, diagnostics, and ongoing cardiac care.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fa-solid fa-child-reaching"></i>
+          <h3>Paediatrics</h3>
+          <p>Gentle, attentive care for infants, children, and teens.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <i class="fa-solid fa-flask"></i>
+          <h3>Laboratory</h3>
+          <p>Accurate, fast diagnostic testing with same-day results for most panels.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <i class="fa-solid fa-x-ray"></i>
+          <h3>Radiology</h3>
+          <p>Modern imaging services including X-ray, ultrasound, and MRI referrals.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <i class="fa-solid fa-pills"></i>
+          <h3>Pharmacy</h3>
+          <p>On-site pharmacy with prescription fulfillment and medication guidance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why-us">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <span class="eyebrow">Why MedLink</span>
+        <h2>Why Patients Choose Us</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card" data-aos="fade-up">
+          <i class="fa-solid fa-user-doctor"></i>
+          <h3>Professional Staff</h3>
+          <p>Board-certified specialists across every major department.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          <h3>Affordable Care</h3>
+          <p>Transparent pricing with flexible payment and insurance options.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fa-solid fa-truck-medical"></i>
+          <h3>24/7 Emergency</h3>
+          <p>Round-the-clock emergency response, every day of the year.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+          <i class="fa-solid fa-microscope"></i>
+          <h3>Modern Equipment</h3>
+          <p>Up-to-date diagnostic and treatment technology.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h3>Online Appointments</h3>
+          <p>Book, reschedule, or cancel visits in just a few clicks.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+          <i class="fa-solid fa-shield-heart"></i>
+          <h3>Trusted Doctors</h3>
+          <p>A team patients have relied on for over 15 years.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOCTORS ===== -->
+  <section class="doctors">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <span class="eyebrow">Our Team</span>
+        <h2>Meet Our Doctors</h2>
+      </div>
+
+      <div class="doctors-grid">
+        <div class="doctor-card" data-aos="fade-up">
+          <img src="assets/images/doctor-1.jpg" alt="Dr. Sarah Mokoena">
+          <!-- photo needed: professional headshot/portrait of a female doctor in scrubs or white coat, friendly smile, neutral or clinic background, square or portrait orientation -->
+          <h3>Dr. Sarah Mokoena</h3>
+          <span>Cardiologist</span>
+          <p>12 years experience</p>
+          <div class="doctor-socials">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/images/doctor-2.jpg" alt="Dr. Thabo Nkosi">
+          <!-- photo needed: professional headshot/portrait of a male doctor in scrubs or white coat, friendly smile, neutral or clinic background, square or portrait orientation -->
+          <h3>Dr. Thabo Nkosi</h3>
+          <span>Paediatrician</span>
+          <p>9 years experience</p>
+          <div class="doctor-socials">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/images/doctor-3.jpg" alt="Dr. Naledi Dube">
+          <!-- photo needed: professional headshot/portrait of a female doctor in scrubs or white coat, friendly smile, neutral or clinic background, square or portrait orientation -->
+          <h3>Dr. Naledi Dube</h3>
+          <span>General Physician</span>
+          <p>15 years experience</p>
+          <div class="doctor-socials">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="assets/images/doctor-4.jpg" alt="Dr. James Pretorius">
+          <!-- photo needed: professional headshot/portrait of a male doctor in scrubs or white coat, friendly smile, neutral or clinic background, square or portrait orientation -->
+          <h3>Dr. James Pretorius</h3>
+          <span>Radiologist</span>
+          <p>11 years experience</p>
+          <div class="doctor-socials">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <span class="eyebrow">Patient Stories</span>
+        <h2>What Our Patients Say</h2>
+      </div>
+
+      <div class="swiper testimonial-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial-card">
+            <img src="assets/images/patient-1.jpg" alt="Lerato M.">
+            <!-- photo needed: friendly headshot of a patient (any gender), casual clothing, warm smile, square orientation -->
+            <p>"The doctors actually listen. I never feel rushed, and booking online saved me so much time."</p>
+            <h4>Lerato M.</h4>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <img src="assets/images/patient-2.jpg" alt="David K.">
+            <!-- photo needed: friendly headshot of a patient (any gender), casual clothing, warm smile, square orientation -->
+            <p>"Emergency care at 2am and they still treated us like we mattered. Forever grateful."</p>
+            <h4>David K.</h4>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <img src="assets/images/patient-3.jpg" alt="Naomi P.">
+            <!-- photo needed: friendly headshot of a patient (any gender), casual clothing, warm smile, square orientation -->
+            <p>"Clean, modern, and the pharmacy on-site meant I didn't need a second stop. Highly recommend."</p>
+            <h4>Naomi P.</h4>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APPOINTMENT CTA ===== -->
+  <section class="appointment-cta">
+    <div class="pulse-line pulse-line-light" aria-hidden="true">
+      <svg viewBox="0 0 600 60" preserveAspectRatio="none">
+        <path d="M0,30 L120,30 L140,10 L160,50 L180,5 L200,55 L220,30 L600,30" />
+      </svg>
+    </div>
+    <div class="container cta-content" data-aos="fade-up">
+      <h2>Book Your Appointment Today</h2>
+      <p>Same-week availability across most departments.</p>
+      <a href="appointments.html" class="btn btn-primary">Book Appointment</a>
+    </div>
+  </section>
+
+  <!-- ===== LATEST ARTICLES ===== -->
+  <section class="blog-preview">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <span class="eyebrow">Health Tips</span>
+        <h2>Latest Articles</h2>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card" data-aos="fade-up">
+          <img src="assets/images/blog-1.jpg" alt="Healthy eating habits">
+          <!-- photo needed: fresh, colorful healthy food / nutrition flatlay, landscape orientation -->
+          <div class="blog-card-body">
+            <span class="blog-category">Nutrition</span>
+            <h3>5 Habits for a Healthier Heart</h3>
+            <span class="blog-date">June 2026</span>
+          </div>
+        </article>
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/images/blog-2.jpg" alt="Person stretching outdoors">
+          <!-- photo needed: person exercising or stretching outdoors, active lifestyle, landscape orientation -->
+          <div class="blog-card-body">
+            <span class="blog-category">Fitness</span>
+            <h3>Building a Sustainable Workout Routine</h3>
+            <span class="blog-date">June 2026</span>
+          </div>
+        </article>
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/images/blog-3.jpg" alt="Person relaxing peacefully">
+          <!-- photo needed: calm, peaceful scene representing mental wellbeing (person relaxing, nature, meditation), landscape orientation -->
+          <div class="blog-card-body">
+            <span class="blog-category">Mental Health</span>
+            <h3>Managing Stress in a Busy Week</h3>
+            <span class="blog-date">June 2026</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PARTNERS ===== -->
+  <section class="partners">
+    <div class="container partners-grid" data-aos="fade-up">
+      <img src="assets/images/partner-1.png" alt="Hospital partner logo">
+      <!-- photo needed: simple hospital/medical group logo, transparent background, grayscale works well -->
+      <img src="assets/images/partner-2.png" alt="Insurance partner logo">
+      <!-- photo needed: simple insurance company logo, transparent background, grayscale works well -->
+      <img src="assets/images/partner-3.png" alt="Medical association logo">
+      <!-- photo needed: simple medical association logo, transparent background, grayscale works well -->
+      <img src="assets/images/partner-4.png" alt="Pharmacy partner logo">
+      <!-- photo needed: simple pharmacy brand logo, transparent background, grayscale works well -->
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <span>MedLink</span>
+        </a>
+        <p>Caring Beyond Medicine. Professional healthcare for every stage of life.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 12 Health Street, Johannesburg</p>
+        <p><i class="fa-solid fa-phone"></i> +27 11 000 0000</p>
+        <p><i class="fa-solid fa-envelope"></i> info@medlink.co.za</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 MedLink Healthcare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
