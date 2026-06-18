@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Doctors | MedLink Healthcare</title>
+  <meta name="description" content="Meet the MedLink Healthcare medical team — board-certified specialists across cardiology, paediatrics, dentistry, neurology, and more.">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>MedLink</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html" class="active">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="appointments.html" class="btn btn-primary nav-cta">Book Appointment</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container" data-aos="fade-up">
+      <span class="eyebrow">Our Team</span>
+      <h1>Meet Our Doctors</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Doctors</p>
+    </div>
+  </section>
+
+  <!-- ===== DEPARTMENT FILTER ===== -->
+  <section class="doctor-filter">
+    <div class="container">
+      <div class="filter-tabs" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="general">General Medicine</button>
+        <button class="filter-btn" data-filter="cardiology">Cardiology</button>
+        <button class="filter-btn" data-filter="paediatrics">Paediatrics</button>
+        <button class="filter-btn" data-filter="dentistry">Dentistry</button>
+        <button class="filter-btn" data-filter="neurology">Neurology</button>
+        <button class="filter-btn" data-filter="radiology">Radiology</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOCTORS GRID (DETAILED) ===== -->
+  <section class="doctors-detailed">
+    <div class="container">
+      <div class="doctors-detailed-grid">
+
+        <div class="doctor-detailed-card" data-category="cardiology" data-aos="fade-up">
+          <img src="assets/images/doctor-1.jpg" alt="Dr. Sarah Mokoena">
+          <!-- photo needed: professional headshot of a female doctor in scrubs or white coat, friendly smile, neutral or clinic background, portrait orientation -->
+          <div class="doctor-detailed-body">
+            <h3>Dr. Sarah Mokoena</h3>
+            <span class="doctor-specialty">Cardiologist</span>
+            <p class="doctor-qualifications">MBChB, FCP (Cardio)</p>
+            <p class="doctor-meta"><i class="fa-solid fa-briefcase-medical"></i> 12 years experience</p>
+            <p class="doctor-meta"><i class="fa-solid fa-language"></i> English, Sesotho</p>
+            <a href="appointments.html" class="btn btn-outline">Book Appointment</a>
+          </div>
+        </div>
+
+        <div class="doctor-detailed-card" data-category="paediatrics" data-aos="fade-up" data-aos-delay="50">
+          <img src="assets/images/doctor-2.jpg" alt="Dr. Thabo Nkosi">
+          <!-- photo needed: professional headshot of a male doctor in scrubs or white coat, friendly smile, neutral or clinic background, portrait orientation -->
+          <div class="doctor-detailed-body">
+            <h3>Dr. Thabo Nkosi</h3>
+            <span class="doctor-specialty">Paediatrician</span>
+            <p class="doctor-qualifications">MBChB, DCH (SA)</p>
+            <p class="doctor-meta"><i class="fa-solid fa-briefcase-medical"></i> 9 years experience</p>
+            <p class="doctor-meta"><i class="fa-solid fa-language"></i> English, Zulu</p>
+            <a href="appointments.html" class="btn btn-outline">Book Appointment</a>
+          </div>
+        </div>
+
+        <div class="doctor-detailed-card" data-category="general" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/images/doctor-3.jpg" alt="Dr. Naledi Dube">
+          <!-- photo needed: professional headshot of a female doctor in scrubs or white coat, friendly smile, neutral or clinic background, portrait orientation -->
+          <div class="doctor-detailed-body">
+            <h3>Dr. Naledi Dube</h3>
+            <span class="doctor-specialty">General Physician</span>
+            <p class="doctor-qualifications">MBChB</p>
+            <p class="doctor-meta"><i class="fa-solid fa-briefcase-medical"></i> 15 years experience</p>
+            <p class="doctor-meta"><i class="fa-solid fa-language"></i> English, Afrikaans, Tswana</p>
+            <a href="appointments.html" class="btn btn-outline">Book Appointment</a>
+          </div>
+        </div>
+
+        <div class="doctor-detailed-card" data-category="radiology" data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/images/doctor-4.jpg" alt="Dr. James Pretorius">
+          <!-- photo needed: professional headshot of a male doctor in scrubs or white coat, friendly smile, neutral or clinic background, portrait orientation -->
+          <div class="doctor-detailed-body">
+            <h3>Dr. James Pretorius</h3>
+            <span class="doctor-specialty">Radiologist</span>
+            <p class="doctor-qualifications">MBChB, FCRad (Diag)</p>
+            <p class="doctor-meta"><i class="fa-solid fa-briefcase-medical"></i> 11 years experience</p>
+            <p class="doctor-meta"><i class="fa-solid fa-language"></i> English, Afrikaans</p>
+            <a href="appointments.html" class="btn btn-outline">Book Appointment</a>
+          </div>
+        </div>
+
+        <div class="doctor-detailed-card" data-category="dentistry" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/images/doctor-5.jpg" alt="Dr. Amahle Zulu">
+          <!-- photo needed: professional headshot of a female dentist in scrubs or white coat, friendly smile, neutral or clinic background, portrait orientation -->
+          <div class="doctor-detailed-body">
+            <h3>Dr. Amahle Zulu</h3>
+            <span class="doctor-specialty">Dentist</span>
+            <p class="doctor-qualifications">BChD</p>
+            <p class="doctor-meta"><i class="fa-solid fa-briefcase-medical"></i> 7 years experience</p>
+            <p class="doctor-meta"><i class="fa-solid fa-language"></i> English, Zulu, Xhosa</p>
+            <a href="appointments.html" class="btn btn-outline">Book Appointment</a>
+          </div>
+        </div>
+
+        <div class="doctor-detailed-card" data-category="neurology" data-aos="fade-up" data-aos-delay="250">
+          <img src="assets/images/doctor-6.jpg" alt="Dr. Michael van der Berg">
+          <!-- photo needed: professional headshot of a male doctor in scrubs or white coat, friendly smile, neutral or clinic background, portrait orientation -->
+          <div class="doctor-detailed-body">
+            <h3>Dr. Michael van der Berg</h3>
+            <span class="doctor-specialty">Neurologist</span>
+            <p class="doctor-qualifications">MBChB, FCN (SA)</p>
+            <p class="doctor-meta"><i class="fa-solid fa-briefcase-medical"></i> 14 years experience</p>
+            <p class="doctor-meta"><i class="fa-solid fa-language"></i> English, Afrikaans</p>
+            <a href="appointments.html" class="btn btn-outline">Book Appointment</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOIN THE TEAM ===== -->
+  <section class="join-team">
+    <div class="container join-team-content" data-aos="fade-up">
+      <i class="fa-solid fa-user-plus"></i>
+      <div>
+        <h3>Are You a Medical Professional?</h3>
+        <p>MedLink is always looking to grow its team with skilled, compassionate practitioners.</p>
+      </div>
+      <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- ===== APPOINTMENT CTA ===== -->
+  <section class="appointment-cta">
+    <div class="pulse-line pulse-line-light" aria-hidden="true">
+      <svg viewBox="0 0 600 60" preserveAspectRatio="none">
+        <path d="M0,30 L120,30 L140,10 L160,50 L180,5 L200,55 L220,30 L600,30" />
+      </svg>
+    </div>
+    <div class="container cta-content" data-aos="fade-up">
+      <h2>Found the Right Doctor?</h2>
+      <p>Book your appointment in just a few clicks.</p>
+      <a href="appointments.html" class="btn btn-primary">Book Appointment</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <span>MedLink</span>
+        </a>
+        <p>Caring Beyond Medicine. Professional healthcare for every stage of life.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 12 Health Street, Johannesburg</p>
+        <p><i class="fa-solid fa-phone"></i> +27 11 000 0000</p>
+        <p><i class="fa-solid fa-envelope"></i> info@medlink.co.za</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 MedLink Healthcare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
