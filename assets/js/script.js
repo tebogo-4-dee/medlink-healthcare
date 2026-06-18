@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initSwiper();
   initDoctorFilter();
   initFAQ();
+  initAppointmentForm();
+  initDoctorFilter();
 });
 
 // ============================
@@ -138,5 +140,43 @@ function initDoctorFilter() {
         }
       });
     });
+  });
+}
+
+// ============================
+// APPOINTMENT FORM
+// ============================
+function initAppointmentForm() {
+  const form = document.getElementById('appointmentForm');
+  if (!form) return;
+
+  const confirmationBox = document.getElementById('confirmationMessage');
+  const confirmName = document.getElementById('confirmName');
+  const confirmRef = document.getElementById('confirmRef');
+  const bookAnotherBtn = document.getElementById('bookAnotherBtn');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const firstName = document.getElementById('firstName').value;
+    const reference = 'MED-' + Math.floor(100000 + Math.random() * 900000);
+
+    confirmName.textContent = firstName;
+    confirmRef.textContent = reference;
+
+    form.hidden = true;
+    confirmationBox.hidden = false;
+    confirmationBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  bookAnotherBtn.addEventListener('click', () => {
+    form.reset();
+    form.hidden = false;
+    confirmationBox.hidden = true;
   });
 }
