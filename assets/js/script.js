@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initDoctorFilter();
   initBlogFilters();
   initAppointmentForm();
+  initContactForm();
+  initBlogFilters();
+  
 });
 
 // ============================
@@ -220,4 +223,37 @@ function initBlogFilters() {
       });
     });
   }
+}
+
+// ============================
+// CONTACT FORM
+// ============================
+function initContactForm() {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  const confirmationBox = document.getElementById('contactConfirmation');
+  const confirmName = document.getElementById('contactConfirmName');
+  const anotherBtn = document.getElementById('contactAnotherBtn');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    confirmName.textContent = document.getElementById('contactName').value;
+
+    form.hidden = true;
+    confirmationBox.hidden = false;
+    confirmationBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  anotherBtn.addEventListener('click', () => {
+    form.reset();
+    form.hidden = false;
+    confirmationBox.hidden = true;
+  });
 }
