@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initCounters();
   initSwiper();
+  initDoctorFilter();
+  initFAQ();
 });
 
 // ============================
