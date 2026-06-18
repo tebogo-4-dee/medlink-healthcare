@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Blog | MedLink Healthcare</title>
+  <meta name="description" content="Read the latest health tips and articles from MedLink Healthcare, covering nutrition, fitness, and mental wellbeing.">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>MedLink</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="appointments.html" class="btn btn-primary nav-cta">Book Appointment</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container" data-aos="fade-up">
+      <span class="eyebrow">Health Tips</span>
+      <h1>The MedLink Blog</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Blog</p>
+    </div>
+  </section>
+
+  <!-- ===== BLOG LAYOUT ===== -->
+  <section class="blog-section">
+    <div class="container blog-layout">
+
+      <!-- MAIN COLUMN -->
+      <div class="blog-main">
+
+        <div class="blog-detailed-grid" id="blogGrid">
+
+          <article class="blog-card" data-category="nutrition" data-aos="fade-up">
+            <img src="assets/images/blog-1.jpg" alt="Healthy eating habits">
+            <!-- photo needed: fresh, colorful healthy food / nutrition flatlay, landscape orientation -->
+            <div class="blog-card-body">
+              <span class="blog-category">Nutrition</span>
+              <h3>5 Habits for a Healthier Heart</h3>
+              <span class="blog-date">June 2026</span>
+              <p>Small, sustainable changes to your daily diet that add up to real cardiovascular benefit over time.</p>
+              <a href="#" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="fitness" data-aos="fade-up" data-aos-delay="50">
+            <img src="assets/images/blog-2.jpg" alt="Person stretching outdoors">
+            <!-- photo needed: person exercising or stretching outdoors, active lifestyle, landscape orientation -->
+            <div class="blog-card-body">
+              <span class="blog-category">Fitness</span>
+              <h3>Building a Sustainable Workout Routine</h3>
+              <span class="blog-date">June 2026</span>
+              <p>Why consistency beats intensity, and how to design a routine you'll actually stick to.</p>
+              <a href="#" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="mental-health" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/images/blog-3.jpg" alt="Person relaxing peacefully">
+            <!-- photo needed: calm, peaceful scene representing mental wellbeing (person relaxing, nature, meditation), landscape orientation -->
+            <div class="blog-card-body">
+              <span class="blog-category">Mental Health</span>
+              <h3>Managing Stress in a Busy Week</h3>
+              <span class="blog-date">June 2026</span>
+              <p>Practical, doctor-recommended techniques to keep stress from affecting your physical health.</p>
+              <a href="#" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="nutrition" data-aos="fade-up">
+            <img src="assets/images/blog-4.jpg" alt="Glasses of water on a table">
+            <!-- photo needed: glasses or bottles of water, hydration theme, landscape orientation -->
+            <div class="blog-card-body">
+              <span class="blog-category">Nutrition</span>
+              <h3>Why Hydration Matters More Than You Think</h3>
+              <span class="blog-date">May 2026</span>
+              <p>The link between everyday hydration and energy, focus, and long-term kidney health.</p>
+              <a href="#" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="fitness" data-aos="fade-up" data-aos-delay="50">
+            <img src="assets/images/blog-5.jpg" alt="Person doing a home workout">
+            <!-- photo needed: person doing a simple home workout, casual setting, landscape orientation -->
+            <div class="blog-card-body">
+              <span class="blog-category">Fitness</span>
+              <h3>10-Minute Workouts for Busy Schedules</h3>
+              <span class="blog-date">May 2026</span>
+              <p>Short, effective movement routines you can fit in before work, no gym required.</p>
+              <a href="#" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="mental-health" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/images/blog-6.jpg" alt="Person journaling">
+            <!-- photo needed: person writing in a journal or notebook, calm setting, landscape orientation -->
+            <div class="blog-card-body">
+              <span class="blog-category">Mental Health</span>
+              <h3>The Case for a Nightly Wind-Down Routine</h3>
+              <span class="blog-date">May 2026</span>
+              <p>How a consistent pre-sleep routine improves both rest quality and next-day mood.</p>
+              <a href="#" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="pagination" data-aos="fade-up">
+          <button class="page-btn active" data-page="1">1</button>
+          <button class="page-btn" data-page="2">2</button>
+          <button class="page-btn" data-page="3">3</button>
+          <button class="page-btn page-next" aria-label="Next page"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="blog-sidebar" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="sidebar-card">
+          <h3><i class="fa-solid fa-magnifying-glass"></i> Search</h3>
+          <form class="search-form" id="blogSearchForm">
+            <input type="text" id="blogSearchInput" placeholder="Search articles...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+
+        <div class="sidebar-card">
+          <h3><i class="fa-solid fa-tags"></i> Categories</h3>
+          <ul class="category-list">
+            <li><button class="category-btn active" data-filter="all">All Articles <span>6</span></button></li>
+            <li><button class="category-btn" data-filter="nutrition">Nutrition <span>2</span></button></li>
+            <li><button class="category-btn" data-filter="fitness">Fitness <span>2</span></button></li>
+            <li><button class="category-btn" data-filter="mental-health">Mental Health <span>2</span></button></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <h3><i class="fa-solid fa-clock-rotate-left"></i> Recent Posts</h3>
+          <div class="recent-post">
+            <img src="assets/images/blog-thumb-1.jpg" alt="">
+            <!-- photo needed: small square thumbnail, healthy food close-up -->
+            <div>
+              <h4>5 Habits for a Healthier Heart</h4>
+              <span>June 2026</span>
+            </div>
+          </div>
+          <div class="recent-post">
+            <img src="assets/images/blog-thumb-2.jpg" alt="">
+            <!-- photo needed: small square thumbnail, person exercising close-up -->
+            <div>
+              <h4>Building a Sustainable Workout Routine</h4>
+              <span>June 2026</span>
+            </div>
+          </div>
+          <div class="recent-post">
+            <img src="assets/images/blog-thumb-3.jpg" alt="">
+            <!-- photo needed: small square thumbnail, calming nature or relaxation scene -->
+            <div>
+              <h4>Managing Stress in a Busy Week</h4>
+              <span>June 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-card sidebar-newsletter">
+          <h3><i class="fa-solid fa-envelope-open-text"></i> Stay Updated</h3>
+          <p>Get monthly health tips straight to your inbox.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+          </form>
+        </div>
+
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <span>MedLink</span>
+        </a>
+        <p>Caring Beyond Medicine. Professional healthcare for every stage of life.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 12 Health Street, Johannesburg</p>
+        <p><i class="fa-solid fa-phone"></i> +27 11 000 0000</p>
+        <p><i class="fa-solid fa-envelope"></i> info@medlink.co.za</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 MedLink Healthcare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
