@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initFAQ();
   initAppointmentForm();
   initDoctorFilter();
+  initBlogFilters();
+  initAppointmentForm();
 });
 
 // ============================
@@ -179,4 +181,43 @@ function initAppointmentForm() {
     form.hidden = false;
     confirmationBox.hidden = true;
   });
+}
+
+// ============================
+// BLOG CATEGORY FILTER + SEARCH
+// ============================
+function initBlogFilters() {
+  const categoryBtns = document.querySelectorAll('.category-btn');
+  const blogCards = document.querySelectorAll('#blogGrid .blog-card');
+  const searchForm = document.getElementById('blogSearchForm');
+  const searchInput = document.getElementById('blogSearchInput');
+
+  if (!blogCards.length) return;
+
+  categoryBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      categoryBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      blogCards.forEach(card => {
+        card.style.display =
+          (filter === 'all' || card.getAttribute('data-category') === filter)
+            ? '' : 'none';
+      });
+    });
+  });
+
+  if (searchForm) {
+    searchForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const term = searchInput.value.trim().toLowerCase();
+
+      blogCards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        card.style.display = title.includes(term) ? '' : 'none';
+      });
+    });
+  }
 }
