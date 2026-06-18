@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment | MedLink Healthcare</title>
+  <meta name="description" content="Book your appointment with MedLink Healthcare online. Choose your department, doctor, and preferred time in just a few clicks.">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>MedLink</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html" class="active">Appointments</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="appointments.html" class="btn btn-primary nav-cta">Book Appointment</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container" data-aos="fade-up">
+      <span class="eyebrow">Book Online</span>
+      <h1>Schedule Your Appointment</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Appointments</p>
+    </div>
+  </section>
+
+  <!-- ===== APPOINTMENT SECTION ===== -->
+  <section class="appointment-section">
+    <div class="container appointment-layout">
+
+      <!-- FORM -->
+      <div class="appointment-form-wrap" data-aos="fade-up">
+
+        <!-- Form (visible by default) -->
+        <form id="appointmentForm" class="appointment-form" novalidate>
+          <h2>Patient & Visit Details</h2>
+          <p class="form-subtext">Fields marked with * are required.</p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Surname *</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="department">Department *</label>
+              <select id="department" name="department" required>
+                <option value="" disabled selected>Select a department</option>
+                <option value="general">General Medicine</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="paediatrics">Paediatrics</option>
+                <option value="dentistry">Dentistry</option>
+                <option value="neurology">Neurology</option>
+                <option value="radiology">Radiology</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="doctor">Preferred Doctor</label>
+              <select id="doctor" name="doctor">
+                <option value="" selected>No preference</option>
+                <option value="mokoena">Dr. Sarah Mokoena — Cardiologist</option>
+                <option value="nkosi">Dr. Thabo Nkosi — Paediatrician</option>
+                <option value="dube">Dr. Naledi Dube — General Physician</option>
+                <option value="pretorius">Dr. James Pretorius — Radiologist</option>
+                <option value="zulu">Dr. Amahle Zulu — Dentist</option>
+                <option value="vanderberg">Dr. Michael van der Berg — Neurologist</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time *</label>
+              <input type="time" id="time" name="time" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="reason">Reason for Visit</label>
+            <textarea id="reason" name="reason" rows="4" placeholder="Briefly describe your symptoms or the reason for your visit..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Confirm Appointment</button>
+        </form>
+
+        <!-- Confirmation message (hidden by default, shown via JS) -->
+        <div id="confirmationMessage" class="confirmation-box" hidden>
+          <i class="fa-solid fa-circle-check"></i>
+          <h2>Appointment Request Received</h2>
+          <p>Thank you, <span id="confirmName"></span>. Your request has been received and our reception team will confirm your exact slot by email or SMS shortly.</p>
+          <p class="confirmation-ref">Reference: <span id="confirmRef"></span></p>
+          <button type="button" id="bookAnotherBtn" class="btn btn-outline">Book Another Appointment</button>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="appointment-sidebar" data-aos="fade-up" data-aos-delay="100">
+        <div class="sidebar-card">
+          <h3><i class="fa-solid fa-clock"></i> Office Hours</h3>
+          <ul class="hours-list">
+            <li><span>Mon – Fri</span><span>07:00 – 19:00</span></li>
+            <li><span>Saturday</span><span>08:00 – 14:00</span></li>
+            <li><span>Sunday</span><span>Emergency Only</span></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card sidebar-emergency">
+          <h3><i class="fa-solid fa-truck-medical"></i> Emergency?</h3>
+          <p>For urgent medical emergencies, skip the form and call us directly — no appointment needed.</p>
+          <a href="tel:+27110000000" class="btn btn-primary btn-block">+27 11 000 0000</a>
+        </div>
+
+        <div class="sidebar-card">
+          <h3><i class="fa-solid fa-circle-info"></i> Good to Know</h3>
+          <ul class="info-list">
+            <li>Bring your ID and medical aid card</li>
+            <li>Arrive 10 minutes before your slot</li>
+            <li>Cancel or reschedule up to 4 hours prior</li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <span>MedLink</span>
+        </a>
+        <p>Caring Beyond Medicine. Professional healthcare for every stage of life.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 12 Health Street, Johannesburg</p>
+        <p><i class="fa-solid fa-phone"></i> +27 11 000 0000</p>
+        <p><i class="fa-solid fa-envelope"></i> info@medlink.co.za</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 MedLink Healthcare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
