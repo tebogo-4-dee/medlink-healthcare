@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | MedLink Healthcare</title>
+  <meta name="description" content="Get in touch with MedLink Healthcare. Find our address, phone number, business hours, and send us a message directly.">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>MedLink</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <a href="appointments.html" class="btn btn-primary nav-cta">Book Appointment</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container" data-aos="fade-up">
+      <span class="eyebrow">Get In Touch</span>
+      <h1>Contact MedLink</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+    </div>
+  </section>
+
+  <!-- ===== QUICK CONTACT CARDS ===== -->
+  <section class="quick-contact">
+    <div class="container quick-contact-grid">
+      <div class="quick-contact-card" data-aos="fade-up">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Visit Us</h3>
+        <p>12 Health Street, Johannesburg, South Africa</p>
+      </div>
+      <div class="quick-contact-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Call Us</h3>
+        <p><a href="tel:+27110000000">+27 11 000 0000</a></p>
+      </div>
+      <div class="quick-contact-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email Us</h3>
+        <p><a href="mailto:info@medlink.co.za">info@medlink.co.za</a></p>
+      </div>
+      <div class="quick-contact-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fa-solid fa-clock"></i>
+        <h3>Business Hours</h3>
+        <p>Mon–Fri: 07:00–19:00<br>Sat: 08:00–14:00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP + FORM ===== -->
+  <section class="contact-section">
+    <div class="container contact-layout">
+
+      <!-- MAP -->
+      <div class="contact-map" data-aos="fade-right">
+        <iframe
+          src="https://www.google.com/maps?q=Johannesburg,South+Africa&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="MedLink Healthcare location map">
+        </iframe>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-form-wrap" data-aos="fade-left">
+
+        <form id="contactForm" class="appointment-form" novalidate>
+          <h2>Send Us a Message</h2>
+          <p class="form-subtext">We typically respond within one business day.</p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Full Name *</label>
+              <input type="text" id="contactName" name="contactName" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address *</label>
+              <input type="email" id="contactEmail" name="contactEmail" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contactSubject">Subject *</label>
+            <input type="text" id="contactSubject" name="contactSubject" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage">Message *</label>
+            <textarea id="contactMessage" name="contactMessage" rows="5" required placeholder="How can we help?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+
+        <div id="contactConfirmation" class="confirmation-box" hidden>
+          <i class="fa-solid fa-circle-check"></i>
+          <h2>Message Sent</h2>
+          <p>Thanks for reaching out, <span id="contactConfirmName"></span>. Our team will get back to you shortly.</p>
+          <button type="button" id="contactAnotherBtn" class="btn btn-outline">Send Another Message</button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EMERGENCY BANNER ===== -->
+  <section class="emergency-banner">
+    <div class="container emergency-content" data-aos="fade-up">
+      <i class="fa-solid fa-truck-medical"></i>
+      <div>
+        <h3>Medical Emergency?</h3>
+        <p>Don't wait for a reply — call our emergency line directly, available 24/7.</p>
+      </div>
+      <a href="tel:+27110000000" class="btn btn-primary">Call Now: +27 11 000 0000</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <span>MedLink</span>
+        </a>
+        <p>Caring Beyond Medicine. Professional healthcare for every stage of life.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 12 Health Street, Johannesburg</p>
+        <p><i class="fa-solid fa-phone"></i> +27 11 000 0000</p>
+        <p><i class="fa-solid fa-envelope"></i> info@medlink.co.za</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 MedLink Healthcare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/27110000000" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
