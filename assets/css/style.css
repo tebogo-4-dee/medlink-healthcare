@@ -1076,3 +1076,169 @@ section {
     text-align: center;
   }
 }
+
+/* ============================
+   DOCTOR FILTER TABS
+============================ */
+.doctor-filter {
+  padding: 40px 0 0;
+}
+
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter-btn {
+  background: var(--white);
+  border: 2px solid #e2e8f0;
+  color: var(--text-dark);
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+/* ============================
+   DOCTORS DETAILED GRID
+============================ */
+.doctors-detailed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.doctor-detailed-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.doctor-detailed-card.hidden {
+  display: none;
+}
+
+.doctor-detailed-card:hover {
+  transform: translateY(-6px);
+}
+
+.doctor-detailed-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.doctor-detailed-body {
+  padding: 24px;
+}
+
+.doctor-detailed-body h3 {
+  font-size: 1.1rem;
+}
+
+.doctor-specialty {
+  display: block;
+  color: var(--primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin: 4px 0 10px;
+}
+
+.doctor-qualifications {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.doctor-meta {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.doctor-meta i {
+  color: var(--green);
+  width: 16px;
+}
+
+.doctor-detailed-body .btn {
+  margin-top: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ============================
+   JOIN TEAM BANNER
+============================ */
+.join-team {
+  background: var(--bg-light);
+}
+
+.join-team-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.join-team-content i {
+  font-size: 2.4rem;
+  color: var(--primary);
+}
+
+.join-team-content div {
+  flex: 1;
+}
+
+.join-team-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.join-team-content p {
+  color: #64748b;
+  font-size: 0.92rem;
+}
+
+/* ============================
+   RESPONSIVE ADDITIONS
+============================ */
+@media (max-width: 992px) {
+  .doctors-detailed-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .doctors-detailed-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .join-team-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .filter-tabs {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+}
