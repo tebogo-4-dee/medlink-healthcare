@@ -1644,3 +1644,164 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================
+   QUICK CONTACT CARDS
+============================ */
+.quick-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.quick-contact-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 30px 24px;
+  text-align: center;
+}
+
+.quick-contact-card i {
+  font-size: 1.7rem;
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+
+.quick-contact-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.quick-contact-card p {
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.quick-contact-card a {
+  color: #64748b;
+}
+
+/* ============================
+   CONTACT LAYOUT
+============================ */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 36px;
+  align-items: stretch;
+}
+
+.contact-map {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  min-height: 480px;
+}
+
+.contact-form-wrap {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 40px;
+}
+
+/* ============================
+   EMERGENCY BANNER
+============================ */
+.emergency-banner {
+  background: #fff5f5;
+}
+
+.emergency-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.emergency-content i {
+  font-size: 2.4rem;
+  color: #e53e3e;
+}
+
+.emergency-content div {
+  flex: 1;
+}
+
+.emergency-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.emergency-content p {
+  color: #64748b;
+  font-size: 0.92rem;
+}
+
+/* ============================
+   WHATSAPP FLOATING BUTTON
+============================ */
+.whatsapp-float {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: var(--transition);
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+.whatsapp-float i {
+  color: var(--white);
+  font-size: 1.7rem;
+}
+
+/* ============================
+   RESPONSIVE ADDITIONS
+============================ */
+@media (max-width: 992px) {
+  .quick-contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-map {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 576px) {
+  .quick-contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-wrap {
+    padding: 28px 22px;
+  }
+
+  .emergency-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .whatsapp-float {
+    bottom: 18px;
+    right: 18px;
+    width: 50px;
+    height: 50px;
+  }
+}
