@@ -1,4 +1,4 @@
-# MedLink Healthcare
+# Botshelong Healthcare
 
 A modern, responsive healthcare website designed to showcase professional medical services. This project demonstrates clean UI/UX design, responsive layouts, and modern front-end development using HTML, CSS, and JavaScript.
 
@@ -6,7 +6,7 @@ A modern, responsive healthcare website designed to showcase professional medica
 
 ## Project Overview
 
-MedLink Healthcare is a fictional healthcare provider created as a portfolio project. The website provides an intuitive user experience for patients to learn about services, meet doctors, and book appointments online.
+Botshelong Healthcare is a fictional healthcare provider created as a portfolio project. The website provides an intuitive user experience for patients to learn about services, meet doctors, and book appointments online.
 
 ---
 
@@ -41,7 +41,7 @@ MedLink Healthcare is a fictional healthcare provider created as a portfolio pro
 ## Project Structure
 
 ```
-medlink-healthcare/
+Botshelong-healthcare/
 │
 ├── index.html
 ├── about.html
@@ -78,7 +78,7 @@ Coming Soon
 ## Installation
 
 ```
-https://github.com/tebogo-4-dee/medlink-healthcare```
+https://github.com/tebogo-4-dee/Botshelong-healthcare```
 
 Open
 
